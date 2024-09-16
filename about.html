@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+     <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #111222;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.17vw 5.21vw;
+    color:#fff;
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 2em;
+    margin-bottom: 2.60vw;
+}
+
+.content{
+    position: relative;
+    width: 59.90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content .image{
+    position: relative;
+    width: 300vw;
+    height: 24vw;
+    overflow: hidden;
+}
+
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:2%;
+}
+
+.content .text-box{
+z-index: 222;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(0.52vw);
+padding:2.08vw;
+min-width: 20.83vw;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2%;
+transform: translate(-4.17vw,2.60vw);
+}
+
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 0.52vw;
+}
+
+.media-icons{
+    display: flex;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+
+.social-icon {
+    width: 8vw;
+    height: 8vw;
+    object-fit: cover;
+    box-shadow: 0 0 10px white; /* Initial shadow */
+    animation: circulatingShadow 2s infinite; /* Animation name and duration */
+    border-radius:4px;
+}
+
+@keyframes circulatingShadow {
+    0% {
+        box-shadow: 0 0 10px white;
+    }
+    25% {
+        box-shadow: 0 0 10px rgba(216, 126, 91, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 15px white;
+    }
+    75% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px white;
+    }
+}
+
+.media-icons{
+    margin-top: 5.21vw;
+}
+
+.media-icons a{
+    color:#fff;
+    font-size: 2em;
+    margin: 3.13vw;
+}
+
+.section-title{
+    font-size: 1.5em;
+    margin-bottom: 4.17vw;
+}
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 0.52vw;
+}
+.info{
+    width: 39.46vw;
+    margin-left: 2.6vw;
+}
+.media-info{
+    width: 20.83vw;
+    margin-left: 2.6vw; 
+
+}
+.media-info li{
+    list-style: none;
+    font-size: 1.4em;
+    padding: 20px;
+}
+.media-info li a{
+    color: #fff;
+    text-decoration: none;
+}
+.media-info li:not(:last-child()){
+    margin-bottom: 2.60vw;
+}
+.media-info li:nth-child(1), .media-info li:nth-child(5){
+    padding-left: 5.21vw;
+}
+.media-info li:nth-child(2), .media-info li:nth-child(4){
+    padding-left: 2.60vw;
+}
+.sec3{
+    margin-bottom: 5.21vw;
+}
+
+.info {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.52vw);
+    padding: 2.08vw;
+    min-width: 22.83vw;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2%;
+    transform: translate(-4.17vw, 2.60vw);
+}
+
+.info-title {
+    font-size: 1.5em; /* Adjust to your preference */
+    margin-bottom: 0.52vw;
+    color: #fff; /* You can customize this color */
+}
+
+.info p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff; /* You can adjust the color */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .main-title {
+        font-size: 3em;
+    }
+
+    .content {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .content .image {
+        width: 100vw;
+        height: auto;
+    }
+    .content .image {
+        max-width: 90vw; /* Adjust image width for smaller screens */
+        height: auto;
+    }
+
+    .content .text-box {
+        transform: translate(0, 0);
+        padding: 4vw;
+    }
+
+    .info, .media-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .social-icon {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .media-info li {
+        font-size: 1.2em;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+    .main-title {
+        font-size: 3.5em;
+    }
+
+    .content {
+        width: 70vw;
+    }
+
+    .info {
+        width: 90%;
+        transform: translate(0, 0);
+    }
+
+    .content .text-box {
+        padding: 3vw;
+    }
+
+    .social-icon {
+        width: 10vw;
+        height: 10vw;
+    }
+    
+        .content .image {
+            max-width: 80vw; /* Adjust for tablets */
+            height: auto;
+        }
+
+}
+
+
+     </style>
+</head>
+<body>
+    <section class="sec1">
+        <div class="container">
+            <h1 class="main-title">ABOUT US</h1>
+            <div class="content">
+                <div class="image">
+                    <img src="header.jpeg" alt="Lubabalo Jack">
+                </div>
+                <div class="text-box">
+                    <h3>SENZASHO PTY LTD</h3>
+                    <p>Senzasho (Pty) Ltd, established in 2017 by Lubabalo Jack, 
+                       is a 100% black-owned company committed to community upliftment. 
+                       With over a decade of experience in the automotive and construction industries,
+                       we specialize in Architecture, general building, civil engineering work, and Electrical work.
+                    </p>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.m4HetC-SxRjDUnFfm7WGpwAAAA?pid=ImgDet&w=191&h=191&c=7" alt="B-BBEE" class="social-icon"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.99Zk3ZIMn0aZgJyCMDnTNAAAAA?rs=1&pid=ImgDetMain" alt="3000222069" class="social-icon"></a>
+                <a href="#"><img src="https://media.licdn.com/dms/image/C4D0BAQHA8oAruwopqw/company-logo_200_200/0/1630527419761/bccei___bargaining_council_for_the_engineering_industry_logo?e=2147483647&v=beta&t=PNwqAXU9GNHBraS8aOxPAVIIiGjb9V0RUJRS6eW6F9M" alt="BC1000003006" class="social-icon"></a>
+                <a href="#"><img src="data:image/jpeg;base64,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" alt="10168222 (2CE,2GB EP,1SQ, 1EP)" class="social-icon"></a>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="container">
+            <h3 class="section-title">More About Us</h3>
+            <div class="content">
+                <div class="image">
+                <img src="architecture.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Architect</h4>
+                    <P>
+                        Architectural Services are provided by our Architect Monwabisi Jack, 
+                        who has extensive experience in the industry. Together, 
+                        we combine our expertise to deliver exceptional results and drive progress.
+
+                    </P>    
+                </div>
+        </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="container">
+            <h3 class="section-title">Connect with us!</h3>
+            <div class="content">
+                    <div class="media-info">
+                        <li><a href="#" class="icon"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-instagram"></i> </a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-linkedin"></i> </a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-youtube"></i> </a></li>
+                    </div>
+                    <div class="image">
+                        <img src="Team.jpeg" alt="Senzasho">
+                    </div>
+            </div>
+        </div>
+    </section> 
+    <!--
+    <script>
+        ScrollReveal({
+            reset:true,
+            distance:'60px',
+            duration:2500,
+            delay:500
+        });
+        ScrollReveal().ScrollReveal().reveal('.main-title, .section-title',{delay:500,origin:'left'});
+    </script>
+    -->
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 500
+        });
+        
+        // Apply ScrollReveal to the specified elements
+        ScrollReveal().reveal('.main-title, .section-title', {
+            delay: 500,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.sec1, .image, .info',{
+            delay: 600,
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.text-box',{
+            delay: 700,
+            origin: 'right'
+        });
+        ScrollReveal().reveal('.media-icons i',{
+            delay: 700,
+            origin: 'bottom',
+            interval: 200
+        });
+        ScrollReveal().reveal('.sec2, .image, .sec3, .image',{ 
+            delay: 500,
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.media-info li',{
+            delay: 500,
+            origin: 'left',
+            interval: 500
+        });
+
+    </script>
+    
+</body>
+</html>

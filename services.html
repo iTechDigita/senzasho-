@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+.wrapper h1{
+    font-size: 3em;
+
+    margin: 25px;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+.card i{
+    margin: 20px;
+    color: rgb(8, 179, 8);
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.card p{
+    color: #6c757d;
+    text-align: center;
+}
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 600;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg.png');
+                                    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg1.jpeg');
+                                    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg2.jpeg');
+                                    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg3.png');
+                                    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg4.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg5.jpg');
+                                    background-size: cover;
+}
+@media(max-width:991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Our Services</h1>
+        <p>We specialize in general building, civil engineering, and construction management, delivering high-quality projects.</p>
+
+             <div class="content-box">
+                <div class="card">
+                    <i class="fas fa-tasks fa-2x"></i>
+                    <h2>Project Management</h2>
+                    <p>Senzasho (Pty) Ltd offers comprehensive project management services, ensuring efficient planning, execution, and completion of projects.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-building fa-2x"></i>
+                    <h2>Building</h2>
+                    <p>Excavations, Plastering, Formwork, Carpentry, Plumbing, Painting, Brickwork/Blockwork and More</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-hard-hat fa-2x"></i>
+                    <h2>Civil Work</h2>
+                    <p>Stormwater, Sewerage works, Earth Construction, Fencing, Gabions, Roadworks, Drains, Curb laying, paving, Kerbing & channeling, Guardrails, Landscaping, and trimming.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-truck-loading fa-2x"></i>
+                    <h2>Plant Hire</h2>
+                    <p>Senzasho provides reliable plant hire services, offering a wide range of equipment for all your construction needs.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-pencil-ruler fa-2x"></i>
+                    <h2>Architecture</h2>
+                    <p>Senzasho offers creative and sustainable architectural designs for residential, commercial, and industrial projects, ensuring high-quality results that meet clients' needs.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-bolt fa-2x"></i>
+                    <h2>Electrical Work</h2>
+                    <p>Cavity wall installations, Maintenance and Repair, DB wiring and installations, Design installations, COC issuing, Geyser installations, and repair.</p>
+                </div>
+                
+             </div>
+    </div>
+</body>
+</html>
